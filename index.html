@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Segitiga</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="page" id="page1">
+      <main>
+        <header>
+          <h2>Welcome</h2>
+
+          <p class="nav-p">
+            Hai Kawan!, Selamat Datang <br />
+            Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas
+            dan keliling bangun datar
+          </p>
+
+          <button class="swap" onclick="showPage('page1')">
+            Luas Segitiga
+          </button>
+
+          <button class="swap" onclick="showPage('page2')">
+            Keliling Segitiga
+          </button>
+
+          <h1 class="nav-3">Luas Segitiga</h1>
+        </header>
+
+        <section>
+          <img src="assets/img-hero.png" alt="Segitiga" class="hero" />
+
+          <p class="rumus">Rumus luas segitiga yaitu: L = 1/2 x a x t</p>
+
+          <label for="base">Alas:</label>
+          <input type="number" id="base" placeholder="Masukkan alas" />
+
+          <label for="height">Tinggi:</label>
+          <input type="number" id="height" placeholder="Masukkan tinggi" />
+
+          <br />
+
+          <button class="button" onclick="calculateArea()">Hitung</button>
+
+          <button class="button" onclick="resetArea()">Reset</button>
+
+          <h2 id="result">
+            Luas segitiga tersebut adalah: <span id="area">....</span>
+          </h2>
+        </section>
+      </main>
+    </div>
+
+    <div class="page" id="page2">
+      <main>
+        <header>
+          <h2>Welcome</h2>
+
+          <p class="nav-p">
+            Hai Kawan!, Selamat Datang <br />
+            Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas
+            dan keliling bangun datar
+          </p>
+
+          <button class="swap" onclick="showPage('page1')">
+            Luas Segitiga
+          </button>
+
+          <button class="swap" onclick="showPage('page2')">
+            Keliling Segitiga
+          </button>
+
+          <h1 class="nav-3">Keliling Segitiga</h1>
+        </header>
+
+        <section class="calculator">
+          <img src="assets/img-hero.png" alt="Segitiga" class="hero" />
+
+          <p class="rumus">Rumus keliling segitiga yaitu: K = S1 + S2 + S3</p>
+
+          <label for="sideA">Sisi A:</label>
+          <input
+            type="number"
+            id="sideA"
+            placeholder="Masukkan panjang sisi A"
+          />
+
+          <label for="sideB">Sisi B:</label>
+          <input
+            type="number"
+            id="sideB"
+            placeholder="Masukkan panjang sisi B"
+          />
+
+          <label for="sideC">Sisi C:</label>
+          <input
+            type="number"
+            id="sideC"
+            placeholder="Masukkan panjang sisi C"
+          />
+
+          <br />
+
+          <button class="button" onclick="calculatePerimeter()">
+            Hitung Keliling
+          </button>
+
+          <button class="button" onclick="resetPerimeter()">Reset</button>
+
+          <h2 id="hasil">Keliling segitiga tersebut adalah: ....</h2>
+        </section>
+      </main>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
